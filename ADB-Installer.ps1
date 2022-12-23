@@ -1,5 +1,5 @@
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
-$host.ui.RawUI.WindowTitle = 'ADB SYSTEM INSTALLER by Haridhayal'
+$host.ui.RawUI.WindowTitle = 'ADB SYSTEM INSTALLER by Haridhayal & PixellyTech'
 
 write-host "Downloading ADB"
 $DownloadDestinationADB = "$HOME\platform-tools-latest-windows.zip"
